@@ -1,0 +1,28 @@
+[project]
+name = "uav-simulation-ardupilot"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Yash Chauhan",email = "yashc9411407582@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dronekit (>=2.9.2,<3.0.0)",
+    "dronekit-sitl (>=3.3.0,<4.0.0)",
+    "flask (==2.2.2)",
+    "flask-api (>=3.1,<4.0)",
+    "requests (>=2.32.4,<3.0.0)",
+    "pyserial (>=3.5,<4.0)",
+    "werkzeug (<2.3)",
+    "ruff (>=0.12.1,<0.13.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+werkzeug = "*"
